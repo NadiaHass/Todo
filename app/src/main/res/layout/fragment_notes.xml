@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/fab_add_note"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
@@ -34,6 +34,8 @@
         android:id="@+id/iv_no_data"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:visibility="gone"
+        android:contentDescription="@string/add_new_notes"
         android:src="@drawable/exclamation"
         app:layout_constraintBottom_toBottomOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +46,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add new notes"
+        android:text="@string/add_new_notes"
+        android:visibility="gone"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:alpha="0.7"
