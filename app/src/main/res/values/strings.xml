@@ -6,4 +6,11 @@
     <string name="add_new_notes">Add new notes</string>
     <string name="title">Title</string>
     <string name="description">Description</string>
+    <string name="update_note">Update note</string>
+
+    <string-array name="priorities">
+        <item>High priority </item>
+        <item>Medium priority </item>
+        <item>Low priority </item>
+    </string-array>
 </resources>

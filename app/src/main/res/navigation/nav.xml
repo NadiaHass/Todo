@@ -11,28 +11,29 @@
         android:label="fragment_notes"
         tools:layout="@layout/fragment_notes" >
         <action
-            android:id="@+id/action_notesFragment_to_updateFragment"
-            app:destination="@id/updateFragment" />
-        <action
             android:id="@+id/action_notesFragment_to_addFragment"
             app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_viewNoteFragment"
+            app:destination="@id/viewNoteFragment" />
     </fragment>
     <fragment
         android:id="@+id/addFragment"
         android:name="com.example.todo.ui.add.AddFragment"
         android:label="fragment_add"
-        tools:layout="@layout/fragment_add" >
-        <action
-            android:id="@+id/action_addFragment_to_notesFragment"
-            app:destination="@id/notesFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_add" />
     <fragment
         android:id="@+id/updateFragment"
         android:name="com.example.todo.ui.update.UpdateFragment"
         android:label="fragment_update"
-        tools:layout="@layout/fragment_update" >
+        tools:layout="@layout/fragment_update" />
+    <fragment
+        android:id="@+id/viewNoteFragment"
+        android:name="com.example.todo.ui.view.ViewNoteFragment"
+        android:label="fragment_view_note"
+        tools:layout="@layout/fragment_view_note" >
         <action
-            android:id="@+id/action_updateFragment_to_notesFragment"
-            app:destination="@id/notesFragment" />
+            android:id="@+id/action_viewNoteFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
     </fragment>
 </navigation>

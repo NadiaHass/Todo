@@ -23,6 +23,10 @@ class NotesFragment : Fragment() {
             Navigation.findNavController(binding.root).navigate(R.id.action_notesFragment_to_addFragment)
         }
 
+        binding.frameLayout.setOnClickListener {
+            Navigation.findNavController(binding.root).navigate(R.id.action_notesFragment_to_viewNoteFragment)
+        }
+
         return binding.root
     }
 }
