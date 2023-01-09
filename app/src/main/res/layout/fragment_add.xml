@@ -51,6 +51,7 @@
         android:paddingStart="24dp"
         android:paddingEnd="24dp"
         android:paddingTop="16dp"
+        android:textColor="@color/white"
         android:background="@android:color/transparent"
         android:layout_marginTop="8dp"
         android:gravity="start|top"

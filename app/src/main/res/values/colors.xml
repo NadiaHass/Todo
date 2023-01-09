@@ -3,11 +3,11 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
 
-    <color name="purple">#6C5DD2</color>
-    <color name="black">#1E2128</color>
+    <color name="purple">#7d6b57</color>
+    <color name="black">#d9d0b4</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lightGray">#DFDEDE</color>
-    <color name="darkGray">#7E7C7C</color>
+    <color name="darkGray">#686666</color>
     <color name="red">#FF4646</color>
     <color name="yellow">#FFC114</color>
     <color name="green">#00C980</color>
