@@ -17,6 +17,7 @@
         android:paddingStart="24dp"
         android:paddingEnd="24dp"
         android:paddingTop="16dp"
+        android:fontFamily="@font/roboto"
         android:background="@android:color/transparent"
         android:inputType="textPersonName"
         android:minHeight="48dp"
@@ -34,6 +35,9 @@
         android:layout_marginTop="8dp"
         android:entries="@array/priorities"
         style="@style/mySpinnerItemSelectedStyle"
+        android:fontFamily="@font/roboto"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -50,6 +54,7 @@
         android:paddingEnd="24dp"
         android:paddingTop="16dp"
         android:background="@android:color/transparent"
+        android:fontFamily="@font/roboto"
         android:layout_marginTop="8dp"
         android:gravity="start|top"
         android:hint="@string/description"
@@ -61,12 +66,14 @@
         app:layout_constraintTop_toBottomOf="@+id/spinner"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="@string/update_note"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

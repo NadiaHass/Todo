@@ -35,10 +35,10 @@
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
         android:entries="@array/priorities"
-        style="@style/mySpinnerItemSelectedStyle"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -64,13 +64,16 @@
         app:layout_constraintTop_toBottomOf="@+id/spinner"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Add note"
+        android:text="@string/add_note"
+        android:textColor="@color/white"
         android:textAllCaps="false"
+        android:textSize="16sp"
+        android:background="@drawable/custom_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
